@@ -414,15 +414,16 @@
       <div class="footer-subscribe">
         <p class="footer-title">Subscribe</p>
         <form class="footer-form">
-          <label class="footer-label-email">
-            <input type="email" class="footer-input-email" placeholder="E-mail" name="footer-input-email">
-            <button type="submit" class="footer-btn-submit">
-              Subscribe
-              <svg width="24" height="24" class="footer-btn-submit-icon">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
+          <label class="footer-label-email" for="footer-input-email">
+            <input type="email" class="footer-input-email" placeholder="E-mail" name="footer-input-email"
+              id="footer-input-email">
           </label>
+          <button type="submit" class="footer-btn-submit">
+            Subscribe
+            <svg width="24" height="24" class="footer-btn-submit-icon">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
         </form>
       </div>
       <!--</div>-->
@@ -467,14 +468,15 @@
           </div>
         </div>
         <div class="modal-field-comment">
-          <div class="form-input-wrap">
-            <label for="user-comment" class="form-label">Comment</label>
-            <textarea name="user-comment" class="form-textarea form-input" placeholder="Text input"
-              id="user-comment"></textarea>
-          </div>
+          <!--<div class="form-input-wrap">-->
+          <label for="user-comment" class="form-label">Comment</label>
+          <textarea name="user-comment" class="form-textarea form-input" placeholder="Text input"
+            id="user-comment"></textarea>
+          <!--</div>-->
         </div>
         <div class="modal-field-checkbox">
-          <input type="checkbox" name="user-privacy" required id="user-privacy" class="check-input visually-hidden">
+          <input type="checkbox" name="user-privacy" required id="user-privacy" class="check-input visually-hidden"
+            value="true">
           <label for="user-privacy" class="check-label">
             <span class="modal-field-checkbox-span">
               <svg class="check-svg" width="10" height="8">
